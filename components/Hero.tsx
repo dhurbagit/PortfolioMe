@@ -116,15 +116,15 @@ export const Hero: React.FC<HeroProps> = ({
           </div>
 
           {/* Profile Header Area */}
-          <div className="px-5 sm:px-8 pb-6 border-b border-slate-200 bg-white">
-            <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+          <div className="px-5 sm:px-8 pb-5 border-b border-slate-200 bg-white">
+            <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 sm:gap-6">
               
               {/* Avatar & Name Info Group */}
-              <div className="flex flex-col sm:flex-row items-center sm:items-end gap-4 text-center sm:text-left">
+              <div className="flex flex-col sm:flex-row items-center sm:items-end gap-3.5 sm:gap-5 text-center sm:text-left">
                 
                 {/* Profile Avatar (Facebook / LinkedIn Style) */}
-                <div className="-mt-16 sm:-mt-22 relative flex-shrink-0 z-10">
-                  <div className="w-28 h-28 sm:w-36 sm:h-36 rounded-full border-4 border-white bg-gradient-to-br from-blue-600 via-indigo-600 to-red-600 p-1 shadow-2xl flex items-center justify-center overflow-hidden bg-slate-900">
+                <div className="-mt-14 sm:-mt-20 relative flex-shrink-0 z-10">
+                  <div className="w-28 h-28 sm:w-36 sm:h-36 rounded-full border-4 border-white bg-gradient-to-br from-blue-600 via-indigo-600 to-red-600 p-1 shadow-xl flex items-center justify-center overflow-hidden bg-slate-900">
                     {avatarSrc ? (
                       // eslint-disable-next-line @next/next/no-img-element
                       <img
@@ -147,9 +147,9 @@ export const Hero: React.FC<HeroProps> = ({
                 </div>
 
                 {/* Name, Main Title, Secondary Title, and Location */}
-                <div className="mt-1 sm:mt-0 sm:pb-1">
+                <div className="pt-0.5 sm:pt-2 sm:pb-1">
                   <div className="flex items-center justify-center sm:justify-start gap-1.5">
-                    <h1 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+                    <h1 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight leading-tight">
                       {fullName}
                     </h1>
                     <span title="Verified Developer Profile">
@@ -157,23 +157,23 @@ export const Hero: React.FC<HeroProps> = ({
                     </span>
                   </div>
 
-                  <p className="text-xs sm:text-sm font-bold text-blue-700 mt-0.5">
+                  <p className="text-xs sm:text-sm font-bold text-blue-700 mt-0.5 leading-snug">
                     {primaryTitle}
                   </p>
 
-                  <p className="text-[11px] sm:text-xs font-semibold text-slate-600 mt-0.5">
+                  <p className="text-[11px] sm:text-xs font-semibold text-slate-600 mt-0.5 leading-snug">
                     {secondaryTitle}
                   </p>
 
                   <p className="text-[11px] sm:text-xs text-slate-500 flex items-center justify-center sm:justify-start gap-1 mt-1 font-medium">
-                    <MapPin className="w-3.5 h-3.5 text-red-600" />
+                    <MapPin className="w-3.5 h-3.5 text-red-600 flex-shrink-0" />
                     <span>{location} • 2+ Years Experience • {availability}</span>
                   </p>
                 </div>
               </div>
 
               {/* Action Buttons */}
-              <div className="flex flex-wrap items-center justify-center sm:justify-end gap-2 sm:pb-1">
+              <div className="flex flex-wrap items-center justify-center sm:justify-end gap-2 sm:pb-1 mt-1 sm:mt-0">
                 <button
                   onClick={onOpenResume}
                   className="px-4 py-2 sm:px-4 sm:py-2.5 rounded-xl bg-gradient-to-r from-blue-700 to-indigo-700 hover:opacity-95 text-white font-bold text-xs sm:text-sm shadow-sm transition-all flex items-center gap-1.5 cursor-pointer"
